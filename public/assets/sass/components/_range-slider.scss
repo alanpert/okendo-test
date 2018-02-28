@@ -1,0 +1,151 @@
+@import '../_vars';
+
+@mixin rangeThumb {
+  width: 20px;
+  height: 20px;
+  margin: -8px 0  0;
+  border-radius: 50%;
+  background: url(../images/slider-thumb.svg) no-repeat center;
+  cursor: pointer;
+  border: 0 !important;
+}
+
+@mixin rangeTrack {
+  // display: none;
+  width: 100%;
+  height: 4px;
+  cursor: pointer;
+  // background: $color-lightgray;
+}
+
+.range-slider {
+  position: relative;
+
+  input {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    outline: none;
+    background: transparent;
+    -webkit-appearance: none;
+
+    // Thumb
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none; // needed again for Chrome & Safari
+      @include rangeThumb;
+      transform: translateY(-0.5px);
+    }
+    &::-moz-range-thumb {
+      @include rangeThumb;
+      transform: translateY(1px);
+    }
+    &::-ms-thumb {
+      @include rangeThumb;
+    }
+
+    // Track
+    &::-webkit-slider-runnable-track {
+      @include rangeTrack;
+      transform: translateY(-1px);
+    }
+    &::-moz-range-track {
+      @include rangeTrack;
+      transform: translateY(1px);
+    }
+    &::-ms-track {
+      @include rangeTrack;
+    }
+  }
+
+  &--element {
+    height: 20px;
+    position: relative;
+  }
+
+  &--background {
+    display: block;
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    &:before {
+      content: '';
+      display: block;
+      width: 2px;
+      height: 30px;
+      background: #84858c;
+      // margin-top: -13px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &--marks {
+    display: block;
+    width: calc(100% - 5px);
+    height: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: justify;
+
+    &:after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+    }
+    &:before {
+      content: '';
+      display: block;
+    }
+    li {
+      display: inline-block;
+      width: 14px;
+      height: 14px;
+      position: relative;
+      top: 4px;
+      left: 0px;
+      background: $color-primary;
+      border-radius: 50%;
+    }
+  }
+
+  &--slider {
+    display: block;
+    width: calc(100% - 10px);
+    height: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: $color-lightgray;
+
+    span {
+      display: block;
+      // width: 100%;
+      height: 4px;
+      position: absolute;
+      background: $color-primary;
+    }
+  }
+
+  &--labels {
+    margin-top: 8px;
+    text-align: justify;
+    &:after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+    }
+    &:before {
+      content: '';
+      display: block;
+    }
+    li {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+    }
+  }
+}

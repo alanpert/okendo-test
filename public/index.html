@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="language" content="en-us">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Okendo Test</title>
+
+  <link rel="stylesheet" href="assets/css/main.css">
+
+</head>
+<body>
+
+  <!-- HEAD -->
+  <section class="head card">
+    <div class="container">
+      <div class="title">
+        <h1 class="tx-center">The Classic - Black</h1>
+        <h2 class="tx-center">Ratings</h2>
+      </div>
+    </div>
+  </section>
+  <!-- /HEAD -->
+
+  <!-- Steps -->
+  <section class="steps">
+    <ul class="container">
+      <li class="completed">Review</li>
+      <li class="active">Ratings</li>
+      <li>Media</li>
+      <li>Confirm</li>
+    </ul>
+  </section>
+  <!-- /Steps -->
+
+  <!-- BODY -->
+  <section class="body">
+    <div class="container card">
+      <form class="" id="formRatings">
+        <div class="row-item rating">
+          <h4>Comfort</h4>
+          <ul class="clearfix rating--buttons js-ratingbutton">
+            <li class="active">
+              <label href="javascript:;" for="RRating-comfort01">1</label>
+              <input type="radio" name="RRating-comfort" id="RRating-comfort01" value="1">
+              <span>Poor</span>
+            </li>
+            <li class="active">
+              <label href="javascript:;" for="RRating-comfort02">2</label>
+              <input type="radio" name="RRating-comfort" id="RRating-comfort02" value="2" checked>
+            </li>
+            <li>
+              <label href="javascript:;" for="RRating-comfort03">3</label>
+              <input type="radio" name="RRating-comfort" id="RRating-comfort03" value="3">
+            </li>
+            <li>
+              <label href="javascript:;" for="RRating-comfort04">4</label>
+              <input type="radio" name="RRating-comfort" id="RRating-comfort04" value="4">
+            </li>
+            <li>
+              <label href="javascript:;" for="RRating-comfort05">5</label>
+              <input type="radio" name="RRating-comfort" id="RRating-comfort05" value="5">
+              <span class="tx-right">Excellent</span>
+            </li>
+          </ul>
+        </div>
+        <div class="row-item rating">
+          <h4>Design</h4>
+          <ul class="clearfix rating--buttons js-ratingbutton">
+            <li class="active">
+              <label href="javascript:;" for="RRating-design01">1</label>
+              <input type="radio" name="RRating-design" id="RRating-design01" value="1">
+              <span>Poor</span>
+            </li>
+            <li class="active">
+              <label href="javascript:;" for="RRating-design02">2</label>
+              <input type="radio" name="RRating-design" id="RRating-design02" value="2" checked>
+            </li>
+            <li>
+              <label href="javascript:;" for="RRating-design03">3</label>
+              <input type="radio" name="RRating-design" id="RRating-design03" value="3">
+            </li>
+            <li>
+              <label href="javascript:;" for="RRating-design04">4</label>
+              <input type="radio" name="RRating-design" id="RRating-design04" value="4">
+            </li>
+            <li>
+              <label href="javascript:;" for="RRating-design05">5</label>
+              <input type="radio" name="RRating-design" id="RRating-design05" value="5">
+              <span class="tx-right">Excellent</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="row-item range-slider" id="RangeSlider01">
+          <h4>Sizing</h4>
+          <div class="range-slider--background">
+            <div class="range-slider--slider js-range-slider">
+              <span></span>
+            </div>
+            <ul class="range-slider--marks js-range-marks">
+            </ul>
+          </div>
+          <div class="range-slider--element">
+            <input type="range" class="js-range-input" name="range-Sizing" min="-2" max="2" steps="1" value="0">
+          </div>
+          <ul class="range-slider--labels">
+            <li>Runs Small</li>
+            <li>True to Size</li>
+            <li>Runs Large</li>
+          </ul>
+        </div>
+
+        <h3 class="mgt20">About You</h3>
+
+        <div class="row-item radiobuttons mgt0">
+          <h4>Foot Shape</h4>
+          <p>Choose <strong>one</strong></p>
+          <div class="radiobuttons--inputs">
+            <input type="radio" name="Rfootshape" id="Rfootshape01" value="Narrow" checked>
+            <label href="javascript:;" class="button" for="Rfootshape01">Narrow</label>
+            <input type="radio" name="Rfootshape" id="Rfootshape02" value="Normal">
+            <label href="javascript:;" class="button" for="Rfootshape02">Normal</label>
+            <input type="radio" name="Rfootshape" id="Rfootshape03" value="Wide">
+            <label href="javascript:;" class="button" for="Rfootshape03">Wide</label>
+          </div>
+        </div>
+
+        <div class="row-item selectbox">
+          <h4>Normal Size</h4>
+          <select name="Snormalsize" class="small" id="Snormalsize">
+            <option value="35">35</option>
+            <option value="36">36</option>
+            <option value="37" default selected>37</option>
+            <option value="38">38</option>
+            <option value="39">39</option>
+          </select>
+        </div>
+
+        <div class="row-item selectbox">
+          <h4>Size Purchased</h4>
+          <select name="Snormalsize" class="small" id="Snormalsize">
+            <option value="35">35</option>
+            <option value="36">36</option>
+            <option value="36.5" default selected>36.5</option>
+            <option value="37">37</option>
+            <option value="38">38</option>
+            <option value="39">39</option>
+          </select>
+        </div>
+
+        <div class="row-item radiobuttons">
+          <h4>Fit</h4>
+          <p>Choose <strong>one</strong></p>
+          <div class="radiobuttons--inputs">
+            <input type="radio" name="Rfit" id="Rfit01" value="Too Tight" checked>
+            <label href="javascript:;" class="button" for="Rfit01">Too Tight</label>
+            <input type="radio" name="Rfit" id="Rfit02" value="A Little Tight">
+            <label href="javascript:;" class="button" for="Rfit02">A Little Tight</label>
+            <input type="radio" name="Rfit" id="Rfit03" value="Perfect">
+            <label href="javascript:;" class="button" for="Rfit03">Perfect</label>
+            <input type="radio" name="Rfit" id="Rfit04" value="A Little Big">
+            <label href="javascript:;" class="button" for="Rfit04">A Little Big</label>
+            <input type="radio" name="Rfit" id="Rfit05" value="Too Big">
+            <label href="javascript:;" class="button" for="Rfit05">Too Big</label>
+          </div>
+        </div>
+
+        <div class="row-item selectbox">
+          <h4>Country</h4>
+          <select name="Snormalsize" class="medium" id="Snormalsize">
+            <option value="Afghanistan">Afghanistan</option>
+            <option value="Albania">Albania</option>
+            <option value="Australia">Australia</option>
+            <option value="Brazil">Brazil</option>
+            <option value="China">China</option>
+            <option value="Congo">Congo</option>
+            <option value="Italy">Italy</option>
+            <option value="Mexico">Mexico</option>
+            <option value="Philippines">Philippines</option>
+            <option value="South Africa">South Africa</option>
+            <option value="United States" selected default>United States</option>
+            <option value="Venezuela">Venezuela</option>
+          </select>
+        </div>
+
+      </form>
+    </div>
+  </section>
+  <!-- /BODY -->
+
+  <!-- FOOTER -->
+  <section class="footer">
+    <a href="javascript:;" class="next-button">Next</a>
+  </section>
+  <!-- /FOOTER -->
+
+  <!-- <svg class="loading-spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+     <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+  </svg> -->
+
+
+
+  <script src="/assets/js/vendors/jquery-3.3.1.min.js" charset="utf-8"></script>
+  <script src="/assets/js/main.js" charset="utf-8"></script>
+</body>
+</html>
